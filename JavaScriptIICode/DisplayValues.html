@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Process Values</title>
+  </head>
+
+  <body>
+    <script>
+      "use strict";
+
+      main();
+
+      function main() {
+        const numberOfValues = Number(prompt("Enter number of values to print"));
+
+        /* We don't need to use window in window.confirm() */
+        /* window.confirm() returns true when OK selected; false when Cancel is selected */
+        const wantHTML = window.confirm("Press OK for formatted output and Cancel otherwise");
+        let printingFunction;
+
+        if (wantHTML) {
+          printingFunction = htmlFormatFunction;
+        } else {
+          printingFunction = textFormatFunction;
+        }
+
+        displayValues(numberOfValues, printingFunction);
+      }
+     
+      function htmlFormatFunction(data) {
+        /* Notice the use of ' ' quotes inside of " " */
+        const output = "<span style='color:red;font-size:4em'><strong>" + data + "</strong></span>";
+        document.writeln(output);
+      }
+
+       function textFormatFunction(data) {
+        document.writeln(data);
+      }
+
+      function displayValues(maximum, printFunction) {
+        for (let curr = 1; curr < maximum; curr++) {
+          printFunction(curr);
+        }
+        printFunction(maximum);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Catalog Inquiry</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="page-frame">
+        <header>
+            <h1>Catalog Inquiry</h1>
+        </header>
+        <div class="form-container">
+            <form action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php" method="get">
+                <label for="item-choice">Item choice</label>
+                <select id="item-choice" name="item-choice" required autofocus>
+                    <option value="clothes">clothes</option>
+                    <option value="books">books</option>
+                    <option value="music">music</option>
+                    <option value="food">food</option>
+                    <option value="other">other</option>
+                </select>
+                <label for="maximumCost">Maximum cost (1–1000)</label>
+                <input type="number" id="maximumCost" name="maximumCost" min="1" max="1000" step="5" value="1">
+                <label>
+                    <input type="checkbox" name="availableOnCampus" value="yes"> Available on campus
+                </label>
+                <label>
+                    <input type="checkbox" name="availableOnline" value="yes" checked> Available online
+                </label>
+                <label for="info">Additional information</label>
+                <textarea id="info" name="info" rows="4" cols="40"></textarea>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@terpmail.umd.edu">
+                <div>
+                    <input type="submit" value="Submit Inquiry">
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div>
+                <a href="index.shtml">&copy; Terp Store (Serving College Park Since 1991)</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

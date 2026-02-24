@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Terpconnect Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="site-header">
+            <p><strong>Daniel Odetoye </strong></p>
+            <p>Link to this site: <a href="https://terpconnect.umd.edu/~dodetoye/terpconnect_static_site/">https://terpconnect.umd.edu/~dodetoye/terpconnect_static_site/</a></p>
+        </header>
+
+        <main>
+            <h1>Web Development Resources</h1>
+            <p>This page collects useful links and references for learning web development.</p>
+
+            <h2>Recommended Tutorials</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Resource</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>MDN Web Docs</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>CSS-Tricks</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>JavaScript.info</td>
+                        <td>Beginner to Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Accessibility</td>
+                        <td>W3C WAI</td>
+                        <td>All</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Video Introduction</h2>
+            <p>Watch this <a href="https://www.youtube.com/watch?v=kUMe1FH4CHE">YouTube video: HTML in 100 Seconds</a> for a quick overview.</p>
+
+            <h2>Quick Reference</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/">MDN</a></li>
+                <li><a href="https://www.w3.org/">W3C</a></li>
+            </ul>
+        </main>
+
+        <footer>
+            <p><strong>Last Modified: </strong><!--#echo var="LAST_MODIFIED" --><br></p>
+        </footer>
+    </div>
+</body>
+</html>

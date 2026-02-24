@@ -1,0 +1,122 @@
+/* page frame */
+.page-frame,
+#mainContainer {
+    border: 4px solid green;
+    background-color: white;
+    background-image: url(images/JimHenson.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 900px;
+    min-height: 600px;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header on all pages */
+header,
+.page-frame header,
+#mainContainer header {
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 1rem;
+    margin: 0 0 1rem 0;
+}
+
+header h1,
+.page-frame header h1,
+#mainContainer header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* nav link container (index page) */
+.nav-container {
+    background-color: rgba(211, 211, 211, 0.8);
+    padding: 1.25rem 2rem;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    max-width: 380px;
+}
+
+.nav-container a:link {
+    color: brown;
+}
+
+.nav-container a:visited {
+    color: beige;
+}
+
+.nav-container a:hover {
+    font-size: 0.9em;
+}
+
+.nav-container a {
+    display: block;
+    margin: 0.35rem 0;
+}
+
+/* form container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid azure;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    margin-bottom: 0.5rem;
+}
+
+.form-container button,
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* footer on all pages */
+footer {
+    background-color: red;
+    border: 1px solid white;
+    margin-top: auto;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    width: calc(100% + 2rem);
+    box-sizing: border-box;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    font-size: 0.9em;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+}

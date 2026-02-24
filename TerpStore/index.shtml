@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Terp Store</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="page-frame">
+        <header>
+            <h1>Terp Store</h1>
+        </header>
+        <div class="nav-container">
+            <a href="catalogInquiry.shtml">Catalog Inquiry</a>
+            <a href="placingOrder.shtml">Placing Order</a>
+        </div>
+        <footer>
+            <div>
+                <a href="index.shtml">&copy; Terp Store (Serving College Park Since 1991)</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
