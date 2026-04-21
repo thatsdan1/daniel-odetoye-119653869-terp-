@@ -1,0 +1,8 @@
+node_modules/
+.env
+**/credentialsDontPost/.env
+.DS_Store
+
+# Optional: keep big zips/pdfs out of repo if you want
+*.zip
+*.pdf
